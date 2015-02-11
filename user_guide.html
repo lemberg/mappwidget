@@ -115,12 +115,13 @@ latitude and longitude values.</p>
 <p><img src="images/image02.png" alt="image02"></p>
 <p><i>Note: Calibration rectangle can be smaller than the map image itself. Geo awareness methods will work on the entire map anyway.</i></p>
 <p>Now we have two points and their location</p>
-<h3>Calibration using slicing tool</h3>
-<p>To calibrate the map, just navigate to the slicing tool web page (<a href="http://mapp.android-libraries.com/slicingtool" title="http://mapp.android-libraries.com/slicingtool">http://mapp.android-libraries.com/slicingtool</a>) 
-and fill in the GPS Positioning section of the form.</p>
-<p><img src="images/image001.png" alt="image001"></p>
-<p>Press the “Submit” button, download the map and place under the assets folder 
-of your project. You are done.</p>
+
+<h3>How to use Map Slicing Tool</h3>
+<p>Open Eclipse Standard 4.3.2 and import "slicingtool" project. Now run this project as "Eclipse Application". As a result new Eclipse instance will be launched. Open "Map Slicing Tool" window:</p>
+<p><img src="images/plugin_screenshot.png" alt="plugin"></p>
+
+<p>and specify map source and slicing parameters. The result of slicing are one XML and a bunch of PNG files in specified directory tree. This directory tree should be placed in your project "assets" directory.</p>
+
 <h3>Manual calibration</h3>
 <p>In order to calibrate your offline map manually, you will need to make changes to the map.xml file that is located at assets/map/ folder.</p>
 <p>Change the map.xml to match this example:</p>
@@ -134,19 +135,7 @@ of your project. You are done.</p>
 <p>This is it.</p>
 
 <h2>How to create map assets?</h2>
-<p>Map assets can be generated through the online tool. The tutorial below gives step-by-step instructions on how to use the tool.</p>
-<ul>
-  <li>Prepare the map source image.</li>
-  <li>Open browser and navigate to <a href="http://mapp.android-libraries.com/slicingtool/" title="http://mapp.android-libraries.com/slicingtool/">http://mapp.android-libraries.com/slicingtool/</a></li>
-  <li>Log in using credentials provided to you by e-mail.</li>
-  <li>Select the tile size (256 is recommended).</li>
-  <li>Enter the name for your map.</li>
-  <li>Upload the map source image.</li>
-  <li>Enter calibration data if you want to use GPS features of the map. (For more details see <a href="http://mapp.android-libraries.com/content/how-calibrate-offline-map-order-use-geographic-aware-methods">How to calibrate offline map in order to use geographic aware methods?</a> section)</li>
-  <li>Click the ‘Submit’ button.</li>
-  <li>Download and extract assets archive.</li>
-</ul>
-<p>Copy the content of the archive to the assets folder. You should have the following structure:</p>
+<p>Map assets can be generated using Map Slicing Tool. Copy results to the assets folder. You should have the following structure:</p>
 <p><img src="images/image033.png" alt="image033"></p>
 <p>Map assets has such structure:</p>
 <p><img src="images/image1010.png" alt="image1010"></p>
