@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/zoom_in"
+          android:title="Zoom In" />
+    <item android:id="@+id/zoom_out"
+          android:title="Zoom Out" />
+<item android:title="Open Map" android:id="@+id/open_map"></item>
+<item android:id="@+id/double_size" android:title="Double Size" android:visible="true" android:enabled="true"></item>
+<item android:id="@+id/half_size" android:title="Half Size" android:visible="true" android:enabled="true"></item>
+<item android:id="@+id/original_size" android:title="Original Size" android:visible="true" android:enabled="true"></item>
+<item android:title="Go to my location" android:id="@+id/my_location"></item>
+</menu>

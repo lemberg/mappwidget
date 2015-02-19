@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Slicingtool
+Bundle-SymbolicName: com.ls.mappwidget.slicingtool;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.ls.mappwidget.slicingtool.Activator
+Bundle-Vendor: LS
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,org.eclipse.core.resources
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: libs/org.eclipse.core.resources.jar,
+ .
