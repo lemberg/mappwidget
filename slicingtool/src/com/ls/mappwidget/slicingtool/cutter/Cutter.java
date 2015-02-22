@@ -48,10 +48,10 @@ public class Cutter
 				File fileXml = new File(outDir, mapName);
 				createDir(fileXml);
 
-				File file = new File(outDir, mapName + "\\" + mapName + "_files");
+				File file = new File(outDir, mapName + File.separator + mapName + "_files");
 				createDir(file);
 
-				String temp = file.getAbsolutePath() + "\\tmp.png";
+				String temp = file.getAbsolutePath() + File.separator + "tmp.png";
 				saveImage(inFile, "png", temp);
 
 				int count = (int) Math.ceil(Math.log(getMaxSide(temp)) / Math.log(2));
@@ -59,12 +59,12 @@ public class Cutter
 
 				for (int i = count; i >= 0; i--)
 				{
-					File fdir = new File(file.getAbsoluteFile(), "\\" + i);
+					File fdir = new File(file.getAbsoluteFile(), File.separator + i);
 					createDir(fdir);
 
 					if (i == count)
 					{
-						imageCut(temp, fdir.getAbsolutePath(), tileSize, fileXml.getAbsoluteFile() + "\\" + mapName + ".xml", true, "", pointTopLeft, pointBottomRight);
+						imageCut(temp, fdir.getAbsolutePath(), tileSize, fileXml.getAbsoluteFile() + File.separator + mapName + ".xml", true, "", pointTopLeft, pointBottomRight);
 					}
 					else
 					{
@@ -94,9 +94,9 @@ public class Cutter
 	{
 		String s = "";
 
-		if (!outDir.endsWith("\\"))
+		if (!outDir.endsWith(File.separator))
 		{
-			s = "\\";
+			s = File.separator;
 		}
 
 		BufferedImage image = getImage(inFile);
