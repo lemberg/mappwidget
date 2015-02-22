@@ -32,7 +32,7 @@ Using apps developed with mAppWidget is possible without data connection, unlike
 ## Requirements
 * Android API 7 or higher
 * Android OS 2.1 or higher
-* Latest JDK, Eclipse recommended
+* Latest JDK, Android Studio 1.1 is recommended
 
 ## Demo app
 mAppWidget demo is available for download on Google Play - 
