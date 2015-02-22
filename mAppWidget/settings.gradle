@@ -1,0 +1,1 @@
+include ':demo1app', ':demo2app', ':mappwidgetlib'

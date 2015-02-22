@@ -1,1 +1,6 @@
-local.properties
+.gradle
+mAppWidget/local.properties
+mAppWidget/.idea/workspace.xml
+mAppWidget/.idea/libraries
+.DS_Store
+/build
