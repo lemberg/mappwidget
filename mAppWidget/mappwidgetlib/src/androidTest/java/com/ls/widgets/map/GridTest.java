@@ -53,7 +53,7 @@ public class GridTest extends AndroidTestCase {
 		config = new OfflineMapConfig("map", MAP_ORIGINAL_WIDTH, MAP_ORIGINAL_HEIGHT, 256, 1, "png");
 		drawable = new BitmapDrawable(getContext().getResources(),
                 BitmapFactory.decodeResource(getContext().getResources(),
-                        R.drawable.maps_blue_dot));
+			com.ls.widgets.map.test.R.drawable.maps_blue_dot));
 
 	    tileManager = new TestTileManager(getContext(), config);
 	}
