@@ -44,7 +44,7 @@ public class MapWidgetTest
         map.setScale(1.0f);
         drawable = new BitmapDrawable(getContext().getResources(),
                 BitmapFactory.decodeResource(getContext().getResources(),
-                        com.ls.widgets.map.R.drawable.maps_blue_dot));
+                        com.ls.widgets.map.test.R.drawable.maps_blue_dot));
         super.setUp();
     }
 
