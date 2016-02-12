@@ -1,6 +1,6 @@
 .gradle
-mAppWidget/local.properties
-mAppWidget/.idea/workspace.xml
-mAppWidget/.idea/libraries
+.idea
+local.properties
+*.iml
 .DS_Store
-/build
+build
