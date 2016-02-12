@@ -16,6 +16,27 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    task androidJavadocs(type: Javadoc) {
+        source = android.sourceSets.main.java.srcDirs
+        classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+    }
+
+    task androidJavadocsJar(type: Jar, dependsOn: androidJavadocs) {
+        classifier = 'javadoc'
+        from androidJavadocs.destinationDir
+    }
+
+    task cleanJar(type: Delete) {
+        delete 'build/outputs/mAppWidget.jar'
+    }
+
+    task makeJar(type: Copy) {
+        from('build/intermediates/bundles/release/')
+        into('build/outputs/')
+        include('classes.jar')
+        rename ('classes.jar', 'mAppWidget.jar')
+    }
 }
 
 dependencies {
